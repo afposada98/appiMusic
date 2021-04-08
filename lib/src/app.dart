@@ -5,7 +5,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Spotify Clone',
+      title: 'Appi Music',
       debugShowCheckedModeBanner: false,
       home: Inicio(),
     );

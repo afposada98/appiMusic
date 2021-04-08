@@ -21,6 +21,7 @@ class _Inicio extends State<Inicio> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     bool logged = prefs.getBool('logged');
     print("LOGGED: ${logged}");
+
     if (logged == true && logged != null) {
       Timer(Duration(seconds: 5),
           () => Navigator.pushReplacementNamed(context, "/home"));
@@ -61,8 +62,13 @@ class _Inicio extends State<Inicio> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
+<<<<<<< Updated upstream:lib/src/VIsta/screens/Inicio.dart
                     "Spotify-Clone",
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+=======
+                    "AppiMusic",
+                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+>>>>>>> Stashed changes:lib/src/ui/screens/splash_screen.dart
                     textAlign: TextAlign.center,
                   ),
                   Divider(
